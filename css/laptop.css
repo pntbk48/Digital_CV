@@ -1,0 +1,274 @@
+body {
+  font-family: sans-serif;
+  color: #868e96;
+}
+
+/* Style for banner in header */
+.bg-img {
+  height: 32rem;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+}
+
+.banner-text {
+  position: absolute;
+  /* In relation to PARENT size */
+  top: 150px;
+  left: 50%;
+  /* In relation to ELEMENT Itself size */
+  transform: translateX(-50%);
+}
+
+/* Style for nav */
+.nav-item-link {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-img {
+  width: 120px;
+  height: 120px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  /* Bring Image into front layer */
+  z-index: 100;
+  position: absolute;
+  /* In relation to PARENT size */
+  left: 50%;
+  /* In relation to ELEMENT Itself size */
+  transform: translateX(-50%);
+}
+
+/* Style for info */
+.bg-one {
+  background-color: #f1f3f5;
+}
+
+.bg-two {
+  background-color: #dee2e6;
+}
+
+/* Style for job */
+.two-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: disc;
+  color: blue;
+}
+
+ul li div {
+  color: #868e96;
+}
+
+.four-column {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.line-blue {
+  width: 20%;
+  height: 4px;
+  background-color: #339af0;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.line-gray {
+  width: 20%;
+  height: 4px;
+  background-color: #dee2e6;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+/* Style for certificate */
+.two-column img {
+  width: 40%;
+}
+
+.certificate .two-column {
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.cer-1 {
+  border-right: 1px solid #ff922b;
+}
+
+/* Style for Project */
+.pro-grid {
+  font-size: 16px;
+  line-height: 1.6;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pro-grid img {
+  border: 1px solid #868e96;
+  width: 100%;
+}
+
+.pro-text {
+  background-color: #339af0;
+  border: 8px solid #339af0;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.pro-name {
+  padding: 16px 8px;
+  border-top: 1px solid #868e96;
+  border-left: 1px solid #868e96;
+  border-right: 1px solid #868e96;
+  margin-bottom: 0;
+}
+.pro-summary {
+  border-top: 1px solid #868e96;
+  border-left: 1px solid #868e96;
+  border-right: 1px solid #868e96;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  column-gap: 8px;
+  padding: 16px;
+}
+
+table {
+  border: 1px solid #868e96;
+  border-collapse: collapse;
+}
+
+td {
+  min-height: 100px;
+  vertical-align: top;
+  border-bottom: 1px solid #868e96;
+  padding: 16px 8px 16px 8px;
+}
+
+/* Style for footer */
+.footer {
+  background-color: #dee2e6;
+  font-size: 18px;
+  padding: 16px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #868e96;
+}
+
+/* Utility */
+/* Style for Icon */
+.navbar i,
+.info i {
+  font-size: 20px;
+  color: #339af0;
+}
+
+.footer i {
+  font-size: 24px;
+  color: #339af0;
+}
+
+.two-column i {
+  font-size: 32px;
+  width: 25%;
+}
+
+.hobby i {
+  font-size: 16px;
+  border: 2px solid #38d9a9;
+  border-radius: 50%;
+  padding: 16px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+
+.pro-container i {
+  font-size: 16px;
+  color: #339af0;
+}
+
+/* Style for project-charter */
+.summary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  font-size: 14px;
+  color: #000;
+}
+
+.bg-summary {
+  background-color: blue;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.hr-title {
+  border-bottom: 1pt solid #868e96;
+}
+
+.hr-item {
+  border-bottom: 1pt solid #dee2e6;
+}
+
+.hr-dash {
+  border-bottom: 1pt dashed #3bc9db;
+}
+
+.goals,
+.team,
+.timeline,
+.scopes,
+.primary {
+  background-color: #edf2ff;
+}
+
+.circle-fill {
+  color: #fff;
+  width: 32px;
+  background-color: #b197fc;
+  border: 1pt solid #495057;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto auto;
+}
+
+.goals i,
+.team i,
+.primary i {
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.timeline {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.scopes .grid-2 {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 36px;
+  align-items: flex-start;
+}

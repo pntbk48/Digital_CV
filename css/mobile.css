@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+  /* Style for navbar */
+  .navbar .container {
+    display: block;
+  }
+
+  /* Style for certificate */
+  .cer-1,
+  .cer-2 {
+    border: none;
+  }
+
+  .cer-1 {
+    border-bottom: 1px solid #ff922b;
+  }
+
+  /* Style for project */
+  .pro-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .pro-summary {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  .pro-summary div:last-child {
+    grid-column: 1;
+  }
+
+  .pro-1 {
+    order: 1;
+  }
+
+  .pro-2 {
+    order: 3;
+  }
+
+  .pro-3 {
+    order: 5;
+  }
+
+  .pro-4 {
+    order: 2;
+    margin-bottom: 40px;
+  }
+
+  .pro-5 {
+    order: 4;
+    margin-bottom: 40px;
+  }
+
+  .pro-6 {
+    order: 6;
+  }
+
+  /* Style for footer */
+  .footer {
+    column-gap: 0;
+  }
+  .footer a {
+    display: none;
+  }
+
+  /* For project-charter */
+  .summary {
+    font-size: 18px;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .scopes .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .goals i {
+    display: none;
+  }
+
+  .goals .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
